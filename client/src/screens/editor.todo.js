@@ -6,6 +6,7 @@ import {Input, TextArea} from '../components/inputs'
 class Editor extends Component {
   handleSubmit = e => {
     e.preventDefault()
+
     const {title, content, tags} = e.target.elements
     const newPost = {
       title: title.value,
